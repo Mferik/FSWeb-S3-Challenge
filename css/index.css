@@ -91,8 +91,33 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
 }
 
+header div{
+    background-color: rgba(0, 4, 17, 0.464);
+}
+header nav{
+    margin-top: 2rem;
+}
+
+header h1{
+    color: white;
+    font-size: 6rem;
+}
+
+header a{
+    padding: 0 7rem;
+    color: white;
+}
+.social{
+    color: white;
+    font-size: 3rem;
+}
+
+.social i{
+padding: 0 3rem;
+}
 /* spacers */
 .spacer {
     width: 100%;
@@ -113,8 +138,18 @@ header {
     background-color: rgb(0, 4, 17);
 }
 
+.gallery img{
+    width: 25%;
+    padding: 1%;
+    height: 25%;
+}
+
+.gallery h2{
+color: white;
+}
 /* about us section */
 .about {
+    color: white;
     width: 100%;
     height: 75vh;
     text-align: center;
@@ -133,6 +168,10 @@ header {
     background-color: rgb(0, 4, 17, .8);
 }
 
+.about p{
+    font-size: 2rem;
+}
+
 .about h2 {
     width: 100%;
 }
@@ -143,6 +182,7 @@ header {
 
 /* contact us section */
 .contact {
+    color: white;
     text-align: center;
     background-image: url("../img/jumbo-restaurant.jpg");
     background-size: cover;
@@ -188,24 +228,79 @@ header {
     width: 25%;
 }
 
+#phone {
+    color: white;
+}
+#email{
+    color: white;
+}
+
 /* footer section */
 footer {
+    color: white;
+    background-color: black;
     width: 100%;
     height: 15vh;
     padding-top: 2.5vh;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
+footer nav{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+footer nav a{
+    color: white;
+    font-size: 1rem;
+    pad: 0 3rem;
+}
+
+.copyright{
+    text-align: end;
+}
+
+footer p{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    font-style:normal;
+}
+
+form{
+    background-color: black;
+}
+
+
+footer section{
+    display: flex;
+    justify-content: space-around;
+}
 /* mobile media query */
-@media (max-width: 428px) {
+@media (max-width: 500px) {
     /* header section */
-    
+    header h1{
+        font-size: 7rem;
+        text-align: center;
+    }
+
+    header nav .menu_item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social i{
+        padding: 0;
+    }
 
     /* gallery section */
     .gallery {
         height: auto;
     }
     
+    .gallery img{
+        width: 100%;
+    }
+
     /* about us section */
 
     .about {
@@ -250,4 +345,24 @@ footer {
         padding-top: 2.5vh;
         font-size: 2rem;
     }
+
+    .footer-section{
+        flex-direction: column;
+    }
+
+    footer nav a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer div{
+        text-align: center;
+    }
+
+    .copyright{
+        text-align: center;
+        padding-bottom:2rem;
+    }
+
 }
